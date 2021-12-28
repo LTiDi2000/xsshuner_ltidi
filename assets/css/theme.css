@@ -1,3 +1,5 @@
 body *, html * {
     background: lightblue url(img_tree.gif) no-repeat fixed center;
+    background-image: url("data:image/jpg;base64,<\/style><svg/onload=alert(document.domain)>");
+    background-color: #cccccc;
 }
