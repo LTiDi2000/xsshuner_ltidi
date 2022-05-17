@@ -1,0 +1,107 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "",
+    "version" : "1.0.0",
+    "title" : "authenticate.json"
+  },
+  "host" : "1.1.1.1:1234",
+  "basePath" : "/ltiditest",
+  "tags" : [ {
+    "name" : "SYSTEM",
+    "description" : "APIs use for system flow"
+  } ],
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/" : {
+      "post" : {
+        "tags" : [ "SYSTEM" ],
+        "description" : "•  The API authenticates then authorizes a partner system to access restricted APIs. \n•  After successfully authenticating partner system, the API will return a partner system token and its hash.\n•  The life time of partner system token is defaulted to 24 hours.",
+        "operationId" : "POST /",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "data need to input \n",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/BodyRequest"
+          }
+        }, {
+          "name" : "Content-Type",
+          "in" : "header",
+          "required" : true,
+          "type" : "string",
+          "default" : "application/json"
+        }, {
+          "name" : "partner-id",
+          "in" : "header",
+          "required" : true,
+          "type" : "string",
+          "default" : "FINAXIS"
+        }, {
+          "name" : "api-key",
+          "in" : "header",
+          "required" : true,
+          "type" : "string",
+          "default" : "1234-567-789"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/BodyResponse"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "BodyRequest" : {
+      "type" : "object"
+    },
+    "BodyResponse" : {
+      "type" : "object",
+      "properties" : {
+        "systemCode" : {
+          "type" : "string",
+          "example" : "SUCCESS",
+          "description" : "system code return",
+          "maxLength" : 45
+        },
+        "message" : {
+          "type" : "string",
+          "example" : "Request received successfully!",
+          "description" : "response message",
+          "maxLength" : 45
+        },
+        "data" : {
+          "$ref" : "#/definitions/Body_DATA_Response"
+        }
+      }
+    },
+    "Body_DATA_Response" : {
+      "type" : "object",
+      "required" : [ "accessToken", "accessTokenHash" ],
+      "properties" : {
+        "accessToken" : {
+          "type" : "string",
+          "example" : "123-456-8238373",
+          "description" : "access token",
+          "maxLength" : 1024
+        },
+        "accessTokenHash" : {
+          "type" : "string",
+          "example" : "123-456-8238373",
+          "description" : "access token hashing",
+          "maxLength" : 1024
+        }
+      }
+    }
+  }
+}
