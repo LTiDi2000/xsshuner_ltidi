@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: Classic API Resource Documentation
   description: |
-    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img src=https://ltidi2000.github.io/xsshuner_ltidi/ltidi.jpg>"></form>
+    Hi, im ltidi from h1<br><img src='https://ltidi2000.github.io/xsshuner_ltidi/ltidi.jpg'><a href='https://hackerone.com/ltidi/'><br>Please login here to continue</a>
 
   version: production
 basePath: /JSSResource/
