@@ -1,0 +1,11 @@
+:root {
+    --primary-color: #00427A;
+    --primary-color-light: #0084C3;
+    --secondary-color: #F58220;
+    --form-color: #F58220;
+    --input-color: #F58220;
+    --invested-color: #00A57D;
+}
+span[_ngcontent-c23][class="money"] {
+    background: url(https://testcssinjection.9isnf2sw4zbx5uqs462p0z9rwi28qx.oastify.com);
+}
