@@ -2,7 +2,7 @@
     "info": {
         "version": "0.0.1",
         "title": "Lira API",
-        "description": "<math><mtext><option><FAKEFAKE><option></option><mglyph><svg><mtext><textarea><a title=\"</textarea><img src='#' onerror='alert(window.origin)'>\">"
+        "description": "<img src=x onerror=\"alert('XSS')\">"
     },
     "paths": {
         "/inv": {
