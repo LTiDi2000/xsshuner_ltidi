@@ -6,16 +6,19 @@ hello_ltidi_from_h1
   <title>Open Two Windows</title>
   <script>
     function openTwoWindows() {
-      var url1 = "https://services-dev.irobot.com/ltidipocx3.js"; // Replace with your desired URL 1
-      var url2 = "https://services-dev.irobot.com/ltidipocx3.js"; // Replace with your desired URL 2
+      var url = "https://services-dev.irobot.com/ltidipocx4.js";
 
       // Open the first window
-      var window1 = window.open(url1, "_blank");
+      var window1 = window.open(url, "_blank");
 
       // Open the second window after a delay
       setTimeout(function() {
-        var window2 = window.open(url2, "_blank");
-      }, 3000);
+        var window2 = window.open(url, "_blank");
+      }, 2000);
+
+      setTimeout(function() {
+        var window3 = window.open(url, "_blank");
+      }, 4000);
     }
   </script>
 </head>
