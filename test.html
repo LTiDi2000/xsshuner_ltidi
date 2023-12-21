@@ -1,24 +1,25 @@
 hello_ltidi_from_h1
 
+<!DOCTYPE html>
 <html>
 <head>
+  <title>Open Two Windows</title>
   <script>
-    function autoSubmitForm() {
-      var form = document.getElementById("myForm");
-      
-      // Submit the form first time
-      form.submit();
-      
-      // Wait for 1 second before submitting again
+    function openTwoWindows() {
+      var url1 = "https://services-dev.irobot.com/ltidipocx3.js"; // Replace with your desired URL 1
+      var url2 = "https://services-dev.irobot.com/ltidipocx3.js"; // Replace with your desired URL 2
+
+      // Open the first window
+      var window1 = window.open(url1, "_blank");
+
+      // Open the second window after a delay
       setTimeout(function() {
-        form.submit();
+        var window2 = window.open(url2, "_blank");
       }, 1000);
     }
   </script>
 </head>
-<body onload="autoSubmitForm()">
-  <form id="myForm" action="https://services-dev.irobot.com/ltidipocx2.js" method="get">
-    <button type="submit">Submit</button>
-  </form>
+<body onload="openTwoWindows()">
+  <h1>Opening Two Windows...</h1>
 </body>
 </html>
