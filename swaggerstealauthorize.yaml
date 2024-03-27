@@ -12,9 +12,23 @@ produces:
 consumes:
   - application/xml
   - application/json
-components:
-  securitySchemes:
-    oAuth2:
+security:
+  - basicAuth: []
+  - oAuth2: []
+paths:
+  /accounts:
+    get:
+      responses:
+        '200':
+          description: No response was specified
+      tags:
+        - accounts
+      operationId: findAccounts
+      summary: Finds all accounts
+securityDefinitions:
+  basicAuth:
+    type: basic
+  oAuth2:
       type: oauth2
       description: For more information, see https://developers.getbase.com/docs/rest/articles/oauth2/requests
       flows: 
@@ -30,16 +44,4 @@ components:
             read: Grant read-only access to all your data except for the account and user info
             write: Grant write-only access to all your data except for the account and user info
             profile: Grant read-only access to the account and user info only
-security:
-  - basicAuth: []
-  - oAuth2: []
-paths:
-  /accounts:
-    get:
-      responses:
-        '200':
-          description: No response was specified
-      tags:
-        - accounts
-      operationId: findAccounts
-      summary: Finds all accounts
+    
