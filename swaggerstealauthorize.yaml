@@ -30,17 +30,11 @@ securityDefinitions:
     type: basic
   oAuth2:
       type: oauth2
-      description: For more information, see https://developers.getbase.com/docs/rest/articles/oauth2/requests
-      flows: 
+      description: For more information, see https://flyseccorp.com/oauth2/authorize
+      flow: 
         implicit:
           authorizationUrl: https://flyseccorp.com/oauth2/authorize
           scopes:
-            read: Grant read-only access to all your data except for the account and user info
-            write: Grant write-only access to all your data except for the account and user info
-            profile: Grant read-only access to the account and user info only
-        password: 
-          tokenUrl: https://flyseccorp.com/oauth2/token
-          scopes: 
             read: Grant read-only access to all your data except for the account and user info
             write: Grant write-only access to all your data except for the account and user info
             profile: Grant read-only access to the account and user info only
