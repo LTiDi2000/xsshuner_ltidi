@@ -14,7 +14,7 @@ produces:
 securityDefinitions:
   OAuth2:
     type: oauth2
-    flow: application
+    flow: authorizationCode
     tokenUrl: https://rzuw6k993etm4evlbzxzep33jupkd9.oastify.com/oauth2/token
     description: OAuth 2.0 with Client Credentias Grant type (ltidi from h1)
   Basic:
