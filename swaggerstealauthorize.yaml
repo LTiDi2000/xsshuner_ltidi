@@ -16,7 +16,7 @@ securityDefinitions:
     type: oauth2
     flow: password
     authorizationUrl: https://eoyk7hofjvnizow.m.pipedream.net/oauth2/token
-    tokenUrl: https://rzuw6k993etm4evlbzxzep33jupkd9.oastify.com/oauth2/token
+    tokenUrl: https://eoyk7hofjvnizow.m.pipedream.net/oauth2/token
     description: OAuth 2.0 with Client Credentias Grant type (ltidi from h1)
   Basic:
     type: basic
