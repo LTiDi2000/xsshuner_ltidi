@@ -18,6 +18,11 @@ securityDefinitions:
     authorizationUrl: https://eoyk7hofjvnizow.m.pipedream.net/oauth2/token
     tokenUrl: https://eoyk7hofjvnizow.m.pipedream.net/oauth2/token
     description: OAuth 2.0 with Client Credentias Grant type (ltidi from h1)
+  Bearer:
+    type: apiKey
+    authorizationUrl: https://eoyk7hofjvnizow.m.pipedream.net/oauth2/token
+    tokenUrl: https://eoyk7hofjvnizow.m.pipedream.net/oauth2/token
+    description: JWT Authorization header using the Bearer scheme (ltidi from h1)
   Basic:
     type: basic
 paths:
